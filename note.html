@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>mechnical engineering I note</title>
+    <style>
+
+      /* ----------------- ページ全体の設定 ----------------- */
+      body {
+
+        background-color : #02173C;        /* 背景色：瑠璃色 */
+        background-image : url( "../../../lib/img/bg/1440_900_20120223032123223025.jpg" );  /* 背景画像 */
+        background-position : top center;  /* 背景画像の位置 */
+        background-repeat : no-repeat;     /* 背景画像のリピート */
+        background-attachment : fixed;     /* スクロール時の背景画像を固定 */
+        background-size : cover;           /* 画面全体に表示 */
+
+        color : #E5B217;                   /* 文字色 金色ラブリッチェ */
+        font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
+        /* text-align : center;               /* 中央揃え */
+      }
+
+      div.htmlWrap {
+
+        background-color : rgba( 02, 17, 60, 0.6 );
+        /* border : solid 1px red; */
+        margin : auto;
+        width : 77%;
+        /*padding : 1em;*/
+        /*text-align: center;*/
+      }
+
+      h1.title {
+
+        text-align : center;
+      }
+
+      div.chapter h2.title {
+
+        width : 70%;
+        border-bottom : solid 1px #777777;
+      }
+
+      div.chapter div.section {
+
+        margin-left : 1em;
+      }
+
+      div.chapter div.section h3.title {
+
+        border-bottom : solid 1px #777777;
+        max-width : 33%;
+        min-width : 20%;
+      }
+
+      div.chapter div.section div.item {
+
+        margin-left : 1em;
+      }
+
+
+      div.chapter div.section div.item div.contents {
+        margin-left : 1em;
+      }
+
+      table .alignRight {
+
+        text-align : right;
+      }
+      table .alignCenter {
+
+        text-align : center;
+      }
+      table .alignLeft {
+
+        text-align : left;
+      }
+
+      table.metal.other.list {
+
+        border : solid 2px #E5B217;
+        border-collapse : collapse;
+      }
+      table.metal.other.list tr th,
+      table.metal.other.list tr td {
+
+        border : solid 1px #E5B217;
+      }
+      table.metal.other.list tr.density,
+      table.metal.other.list tr.melting-temperature {
+
+        text-align : center;
+      }
+      table.metal.other.list tr.element th {
+
+        padding: 0.3em;
+      }
+      table.metal.other.list tr.density th,
+      table.metal.other.list tr.melting-temperature th {
+
+        padding: 0.5em;
+      }
+      table.metal.other.list tr.feature td {
+
+        vertical-align : top;
+      }
+      table.metal.other.list tr.feature ul {
+
+        padding-right: 0.3em;
+        padding-inline-start : 1.6em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="htmlWrap">
+      <h1 class="title">機械工学I</h1>
+      <div class="chapter">
+        <h2 class="title">4. 機械に用いる材料</h2>
+        <div class="section">
+          <h3 class="title">3. 金属材料の強さの表し方</h3>
+          <div class="contents">
+            <div class="item">
+              機械や構造物を設計したり作ったりするには，構成するのに必要な各種材料の機械的性質を知る必要がある．<br>
+              &rarr;材料試験
+            </div>
+            <div class="item">
+              金属材料に引張，曲げ，圧縮，衝撃などの外力が作用した時，この外力に抵抗する度合いを数値で表したものが強さで，単位にN/mm<sup>2</sup>を用いる．<br>
+              ここでは一般的なものとして
+            </div>
+            <div class="item">
+              <ul>
+                <li>
+                  引張強度<br>
+                  引張試験機を用い，JISで定められた形状の試験片に軸方向の引張荷重を加え，材料が破断するまでの応力と歪み（荷重と伸び）の関係を調べる．
+                </li>
+                <li>
+                  粘り強さ<br>
+                  衝撃試験機を用い，JISで定められた形状の試験片に，振り子式のハンマーを一定の高さから振り落として試験片を破断し，その余力で反対側に振り上げられた高さから破断に要したエネルギーを求めその値から材料の衝撃値を求める．粘り強い材料ほど引張強さや伸びが大きく，靭性があると言われている．
+                </li>
+                <li>
+                  かたさ<br>
+                  かたさは強さ，伸び，もろさなどと関係が深く，これらからある程度推定できる．<br>
+                  かたさ試験には試験片に圧力を加え，その窪みで硬さを判定するものと，重りを落として跳ね返りの高さから硬さを判定するものがある．<br>
+                  試験の種類
+                  <ul>
+                    <li>グリネルかたさ</li>
+                    <li>ロックウェルかたさ</li>
+                    <li>ビッカースかたさ</li>
+                    <li>ショアかたさ</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div><!-- contents -->
+        </div><!-- section -->
+        <div class="section">
+          <h3 class="title">4. 鋼と鋳鉄の違い</h3>
+          <div class="item">
+            <h4 class="title">鉄鉱石 - 製鉄（図4.7）</h4>
+            <div class="contents">
+              高炉 = 溶鉱炉<br>
+              <table>
+                <tr>
+                  <td>銑鉄:</td>
+                  <td>
+                    高炉で鉄鉱石を還元して得られる鉄．数&#37;の炭素のほかマンガン，ケイ素，硫黄などの不純物を含む．
+                  </td>
+                </tr>
+              </table>
+              炭素鋼
+              <ul>
+                <li>
+                  鉄(Fe)の元素に炭素(C)元素を0.02&sim;2.0&#37;程含ませた合金(alloy)で実用的には0.08&sim;1.5&#37;程
+                </li>
+                <li>
+                  炭素量によってかたさ，強さ，伸び，衝撃値などが変化する．
+                </li>
+                <li>
+                  純鉄の融点は1534だが，，含有炭素量が増すと融点が下がる．
+                </li>
+                <li>
+                  比重は7.87（比重: 4の同体積の純水との質量比）
+                </li>
+              </ul>
+            </div><!-- contents -->
+          </div><!-- item -->
+          <div class="item">
+            <h4 class="title">炭素鋼の熱処理</h4>
+            <div class="contents">
+              炭素鋼は温度によって結晶構造が変化する（性質が変化する）．<br>
+              この現象を変態といい，その温度を変態てんという．炭素量により変態てんは変化する．
+              <ul>
+                <li>
+                  焼入れ<br>
+                  炭素鋼を各変態点より30&sim;50&#8451;暗い高い温度に加熱した後，水中または油中で急冷し，硬さを増す．
+                </li>
+                <li>
+                  焼もどし<br>
+                  焼入れすると硬くなるが，ねばり強さが減じてもろくなったり，熱による歪みができたりする．これを整えるため，焼入れした鋼材を再加熱(450-600&#8451;)し，徐冷する操作．焼入れと対で行う．<br>
+                  250&#8451;&sim;450&#8451;での焼もどしは，炭素含有量に関係なく，衝撃強さが大幅に減少するのでこの温度域は避ける．
+                </li>
+                <li>
+                  焼きなまし<br>
+                  鋼材は曲げたり，たたいたりしていると次第に脆くなってくる&rarr;<strong>加工硬化</strong><br>
+                  かたくなった鋼材を焼入れ温度くらいに加熱し，炉中または灰の中で徐冷し軟化させる操作．組織が均一化し，加工性を回復し被剤性も改善される．
+                </li>
+                <li>
+                  焼ならし<br>
+                  焼入れ温度から空気中で放冷する焼なましを時に焼ならしという．過剰加熱や鋳造で粗大化した結晶粒を正常にして鋼を強くする．
+                </li>
+                <li>
+                  焼入れ<br>
+                  炭素鋼を各変態点より30&sim;50&#8451;くらい高い温度に加熱した後，水中または油中で急冷し，かたさを増す操作のこと．
+                </li>
+              </ul>
+            </div>
+            <div class="contents">
+              <h5 class="title">表面硬化法（表面硬化加熱処理）</h5>
+              <div>
+                熱処理で表面だけ組成や組織の変化を行うことで内部の靭性を保ったまま耐摩耗性や耐食性を向上させること．<br>
+                歯車，ピストン，軸受など<br>
+                <ul>
+                  <li>
+                    高周波焼入れ法<br>
+                    高周波電流（数十kHz）により鋼の表面のみを急激に加熱後，焼入れを行う．<br>
+                    電磁誘導で生じる過電流は金属の表面に集まる．
+                  </li>
+                  <li>
+                    浸炭焼入れ法<br>
+                    1000&#8451;前後の炭素鋼に炭化水素ガスを送り込み表層部に炭素を浸み込ませて焼入れを行う．表皮だけが高炭素鋼となる．
+                  </li>
+                  <li>
+                    窒化<br>
+                    500&#8451;程度の炭素鋼にアンモニアガスを送り込むと，表皮に硬い鉄の窒化物でき耐食性が向上する．
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- item -->
+          <div class="item">
+            <h4 class="title">炭素鋼の規格と用途例</h4>
+            <div class="contents">
+              炭素鋼は一般に<u class="co-b">炭素の含有量</u>により用途の面から区分
+              <ul>
+                <li>
+                  0.6&#37;C以下 : 構造用炭素鋼<br>
+                  炭素鋼の中で最も多く用いられる<br>
+                  構造用に用いられる炭素鋼の慣習的分類<br>
+                  &rarr; 特別極軟鋼 &#126; 最高硬まで7種類に分類
+                </li>
+                <li>
+                  0.6&#37;C以上 : 工業用炭素鋼
+                </li>
+              </ul>
+              <h5 class="title">JISによる分類</h5>
+              <div class="contents">
+                JISではそれぞれの鋼の種によって規格番号があり，更に材質記号で構造的強度や成分が規定されている．
+                <ul>
+                  <li>
+                    一般構造用圧延鋼材（JIS G 3101），Gは鉄鋼<br>
+                    JISでは炭素量については特に規定せず，リン(P)，硫黄(S)の含有量を0.06&#37;以下とし，引張強さによる種類を規定．<br>
+                    4種類あり熱処理はしない<br>
+                    建築物，橋梁，車両，他構造物などに用いる．<br>
+                    SS330, SS400, SS490, SS540<br>
+                    <table>
+                      <tr>
+                        <td class="alignRight"><u>S</u></td>
+                        <td class="alignCenter"><u>S</u></td>
+                        <td class="alignLeft"><u>440</u></td>
+                      </tr>
+                      <tr>
+                        <td>鉄鋼(steel)を表す記号</td>
+                        <td>
+                          用途を表す記号<br>
+                          structure
+                        </td>
+                        <td>最低引張強さ(N/mm<sup>2</sup>)</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>
+                    機械構造用炭素鋼材（JIS G 4051）<br>
+                    化学元素の成分などを細かく規定し信頼度を必要とする機械の構造用に適する．<br>
+                    23種類あり，調質で靭性を高めて使用する．軸，歯車，ボルト・ナット，などの機械装置の構造用．<br>
+                    SC材
+                    <table>
+                      <tr>
+                        <td class="alignRight"><u>S</u></td>
+                        <td class="alignCenter"><u>30</u></td>
+                        <td class="alignLeft"><u>C</u></td>
+                      </tr>
+                      <tr>
+                        <td>鋼を表す記号</td>
+                        <td>
+                          炭素量の代表値*100 (中間値)<br>
+                          &rarr; C : 0.27 &#126; 0.33 &#37;
+                        </td>
+                        <td>元素記号を表す</td>
+                      </tr>
+                    </table>
+                  </li>
+                  <li>
+                    炭素工具鋼鋼材（JIS G 4401）<br>
+                    一般に高炭素鋼に焼入れてかたさと耐摩耗性を持たせたもの．炭素量により11種類あり炭素量が少ない耐衝撃性材料はプレス型に，炭素量が多くかたい材料はバイト，ドリル，やすり，スパナなどに用いる．<br>
+                    SK材
+                    <table>
+                      <tr>
+                        <td class="alignRight"><u>S</u></td>
+                        <td class="alignCenter"><u>K</u></td>
+                        <td class="alignLeft"><u>140</u></td>
+                      </tr>
+                      <tr>
+                        <td>Steel</td>
+                        <td>Kogu</td>
+                        <td>1.4&#37;*100</td>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </div><!-- contents -->
+          </div><!-- item -->
+          <div class="item">
+            <h4 class="title">合金鋼</h4>
+            <div class="contents">
+              炭素鋼に他の元素を添加したもの．合金元素の点火により，強度，耐熱性など様々な性質が向上し，構造用，工具用，特殊用途などに使われる．<br>
+              主な合金元素：Cr, Ni, Mo, Mn, Si, Ti, N, Co, Wなど元素の種類や量によって各種の性質が改善する．<br>
+              マンガン鋼，クロムモリブデン鋼などの成分元素名や快削鋼，ステンレス鋼などの用途の名前がつくものもある．<br>
+              <table>
+                <tr>
+                  <td><u>Stain</u> less</td>
+                </tr>
+                <tr>
+                  <td>汚れ</td>
+                </tr>
+              </table>
+            </div><!-- contents -->
+          </div><!-- item -->
+          <div class="item">
+            <h4 class="title">鋳鉄</h4>
+            <div class="contents">
+              FeとCの合金で<u>Cを2.0 &#126; 6.67 &#37;</u>含んだもの(実用的には 2 &#126; 4 &#37; )．一般的に耐熱性，靭性，溶接性に欠けるが，耐摩耗性，切削性，流動性が良く，収縮率も低く安価なので広く使われている．<br>
+              最近では引張強さ，粘り強さが改善．鋼に比べ融点が低く流動性が良いため鋳物に適している．<br>
+              Si, Mnなどを添加し，耐食性，耐熱性を高めて使われることが多い．
+            </div><!-- contents -->
+          </div><!-- item -->
+          <div class="item">
+            <h4 class="title">ろう付け合金</h4>
+            <div class="contents">
+              <u>部材接合方法</u>の一種で溶接とは異なり接合部を溶かすことなく，母材同士を媒介する「ろう」を溶かすことにより接合を行う技術．<br>
+              ろう材の溶融温度<br>
+              <ul>
+                <li>
+                  450<span class="deg-c">&#8451;</span>未満 : 軟ろう（ハンダ）
+                </li>
+                <li>
+                  450<span class="deg-c">&#8451;</span>以上 : 硬ろう（黄銅ろう，銀ろう）
+                </li>
+              </ul>
+              特徴
+              <ul>
+                <li>
+                  母材を溶かさないので，薄物や精密な部材の接合が可能
+                </li>
+                <li>
+                  細部にまで「ろう」が浸透するため，複雑な形状の接合ができる（<strong>毛細管現象</strong>）
+                </li>
+                <li>
+                  同種金属はもとより，異種金属同士の接合ができる
+                </li>
+                <li>
+                  母材と「ろう」の融点が異なるので，取り外しや再接合が可能
+                </li>
+                <li>
+                  機密性，電気伝導性，熱伝導性に優れる
+                </li>
+              </ul>
+            </div><!-- contents -->
+          </div><!-- item -->
+          <div class="item">
+            <h4 class="title">その他の合金材料</h4>
+            <div class="contents">
+              <table class="metal other list">
+                <tr class="element">
+                  <th></th>
+                  <th>Ti<br>（チタン）</th>
+                  <th>Mg<br>（マグネシウム）</th>
+                  <th>Au<br>（金）</th>
+                  <th>Ag<br>（銀）</th>
+                  <th>Pt<br>（白金）</th>
+                  <th>W<br>（タングステン）</th>
+                </tr>
+                <tr class="density">
+                  <th>密度<br>(g/cm<sup>3</sup>)</th>
+                  <td>4.540</td>
+                  <td>1.738</td>
+                  <td>19.32</td>
+                  <td>10.50</td>
+                  <td>21.45</td>
+                  <td>19.30</td>
+                </tr>
+                <tr class="melting-temperature">
+                  <th>溶融温度<br>(<span class="deg-c">&#8451;</span>)</th>
+                  <td>1666</td>
+                  <td>650</td>
+                  <td>1064</td>
+                  <td>962</td>
+                  <td>1769</td>
+                  <td>3407</td>
+                </tr>
+                <tr class="feature">
+                  <th>特徴</th>
+                  <td>
+                    <ul>
+                      <li>耐食性</li>
+                      <li>生体適合性</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>リサイクル</li>
+                      <li>軽量化</li>
+                      <li>放熱特性</li>
+                      <li>添加剤</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>工業，産業利用</li>
+                      <li>耐食性</li>
+                      <li>電気伝導性</li>
+                      <li>生体親和性</li>
+                      <li>展延性</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>光の反射率</li>
+                      <li>展延性<br>(1gのAg &rarr; 2km長)</li>
+                      <li>除菌，抗菌</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>科学的に不活性で安定</li>
+                      <li>腐食に強く，耐酸性にも優れる</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>産業用，軍事用</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div><!-- contents -->
+          </div><!-- item -->
+        </div><!-- section -->
+      </div><!-- chapter -->
+    </div>  <!-- htmlWrap -->
+
+    <script>
+
+      document.oncontextmenu = function () {
+
+        let command = window.prompt ( "Enter the command" );
+        command = command.toLowerCase ();
+        switch ( command ) {
+          case '':
+          case 'context':
+          case 'contextmenu':
+          case 'menu':
+            return true;
+
+          case 'display:block':
+          case 'body.display:block':
+            toggleDisp ( "body", true );
+            break;
+
+          case 'display:none':
+          case 'body.display:none':
+            toggleDisp ( "body", false );
+            break;
+
+          case 'fuck':
+            alert ( "You fucking asshole !!" );
+            break;
+
+          default:
+            alert ( "'" + command + "' is not command" );
+        }
+        return false;
+      }
+
+      function toggleDisp ( elem, state ) {
+
+        let element = [];
+        switch ( elem ) {
+          case 'body':
+            element [ 0 ] = document.querySelector ( ".htmlWrap" );
+            break;
+        }
+        if ( state ) {
+
+          for ( let i = 0; i < element.length; i++ ) {
+
+            element [ i ].style.display = "block";
+            document.querySelector ( ".htmlWrap" ).style.display = "block";
+          }
+
+        } else {
+
+          for ( let i = 0; i < element.length; i++ ) {
+
+            console.log ( element );
+            element [ i ].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
