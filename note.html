@@ -476,11 +476,25 @@
 
           case 'display:block':
           case 'body.display:block':
+          case 'body.style.display:block':
+          case 'note.display:block':
+          case 'note.style.display:block':
+          case '.note.display:block':
+          case '.note.style.display:block':
+          case 'body.note.display:block':
+          case 'body.note.style.display:block':
             toggleDisp ( "body", true );
             break;
 
           case 'display:none':
           case 'body.display:none':
+          case 'body.style.display:none':
+          case 'note.display:none':
+          case 'note.style.display:none':
+          case '.note.display:none':
+          case '.note.style.display:none':
+          case 'body.note.display:nonw':
+          case 'body.note.style.display:none':
             toggleDisp ( "body", false );
             break;
 
@@ -522,3 +536,4 @@
     </script>
   </body>
 </html>
+
