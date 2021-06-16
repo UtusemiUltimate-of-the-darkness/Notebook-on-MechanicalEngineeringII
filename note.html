@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>mechnical engineering I note</title>
+    <title>mechnical engineering note</title>
     <style>
 
       /* ----------------- ページ全体の設定 ----------------- */
@@ -33,6 +33,7 @@
       h1.title {
 
         text-align : center;
+        font-family : "Apple Chancery";
       }
 
       div.chapter h2.title {
@@ -95,6 +96,30 @@
 
         padding: 0.3em;
       }
+      table.metal.other.list tr.element th.Ti {
+        min-width : 4.5em;
+      }
+      table.metal.other.list tr.element th.Mg {
+        min-width : 7.5em;
+      }
+      table.metal.other.list tr.element th.Au {
+        min-width : 6.5em;
+      }
+      table.metal.other.list tr.element th.Ag {
+        min-width : 7em;
+      }
+      table.metal.other.list tr.element th.Pt {
+        min-width : 7.5em;
+      }
+      table.metal.other.list tr.element th.W {
+        min-width : 8em;
+      }
+      table.metal.other.list tr.element th.Ni {
+        min-width : 7.5em;
+      }
+      table.metal.other.list tr.element th.Pb {
+        min-width : 7.5em;
+      }
       table.metal.other.list tr.density th,
       table.metal.other.list tr.melting-temperature th {
 
@@ -115,7 +140,10 @@
 
   <body>
     <div class="htmlWrap">
-      <h1 class="title">機械工学I</h1>
+      <h1 class="title">Mechnical engineering's notebook</h1>
+      <div class="readme">
+        This is a notebook for Mechnical engineering for the CAD design course at Tohoku Electronics College.
+      </div>
       <div class="chapter">
         <h2 class="title">4. 機械に用いる材料</h2>
         <div class="section">
@@ -385,12 +413,14 @@
               <table class="metal other list">
                 <tr class="element">
                   <th></th>
-                  <th>Ti<br>（チタン）</th>
-                  <th>Mg<br>（マグネシウム）</th>
-                  <th>Au<br>（金）</th>
-                  <th>Ag<br>（銀）</th>
-                  <th>Pt<br>（白金）</th>
-                  <th>W<br>（タングステン）</th>
+                  <th class="Ti">Ti<br>(チタン)</th>
+                  <th class="Mg">Mg<br>(マグネシウム)</th>
+                  <th class="Au">Au<br>(金)</th>
+                  <th class="Ag">Ag<br>(銀)</th>
+                  <th class="Pt">Pt<br>(白金)</th>
+                  <th class="W">W<br>(タングステン)</th>
+                  <th class="Ni">Ni<br>(ニッケル)</th>
+                  <th class="Pb">Pb<br>(鉛)</th>
                 </tr>
                 <tr class="density">
                   <th>密度<br>(g/cm<sup>3</sup>)</th>
@@ -400,6 +430,8 @@
                   <td>10.50</td>
                   <td>21.45</td>
                   <td>19.30</td>
+                  <td>8.902</td>
+                  <td>11.35</td>
                 </tr>
                 <tr class="melting-temperature">
                   <th>溶融温度<br>(<span class="deg-c">&#8451;</span>)</th>
@@ -409,6 +441,8 @@
                   <td>962</td>
                   <td>1769</td>
                   <td>3407</td>
+                  <td>1455</td>
+                  <td>328</td>
                 </tr>
                 <tr class="feature">
                   <th>特徴</th>
@@ -453,10 +487,78 @@
                       <li>産業用，軍事用</li>
                     </ul>
                   </td>
+                  <td>
+                    <ul>
+                      <li>腐食しにくく安定</li>
+                      <li>ニッケル合金，ニッケルメッキ</li>
+                      <li>ニッケル水素電池</li>
+                      <li>形状記憶合金</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>生物に対する毒性，畜毒性</li>
+                      <li>近年，利用が避けられる傾向</li>
+                    </ul>
+                  </td>
                 </tr>
               </table>
             </div><!-- contents -->
           </div><!-- item -->
+        </div><!-- section -->
+        <div class="section">
+          <h3 class="title">6. 金属以外の機械材料</h3>
+          <div class="contents">
+            プラスチック（樹脂）
+            <ul>
+              <li>
+                合成樹脂<br>
+                石油，天然ガス
+              </li>
+              <li>天然樹脂</li>
+              <li>
+                バイオマスプラスチック<br>
+                生分解性<br>
+                再生可能資源
+              </li>
+            </ul>
+          </div><!-- contents -->
+          <div class="contents">
+            <ul>
+              <li>
+                樹脂
+                <ul>
+                  <li>熱硬化性樹脂</li>
+                  <li>
+                    熱可塑性樹脂
+                    <ul>
+                      <li>汎用プラスチック</li>
+                      <li>エンジニアリングプラスチック</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- contents -->
+          <div class="contents">
+            <ul>
+              <li>
+                熱可塑性樹脂<br>
+                原料を加熱し軟化溶融状態にし，型に入れ，加圧，成形後，冷却硬化させて製品とする．再加熱することで軟化溶融状態に戻り，リサイクル可能．<br>
+                熱に弱いが，射出成形や押し出し成形で加工が容易．
+              </li>
+              <li>
+                熱硬化性樹脂<br>
+                成形後，冷却効果までは熱可塑性と同様だが，その後，再加熱しても軟化せず，溶剤にも溶解しない．<br>
+                耐熱性，耐薬品性に優れている．<br>
+                リサイクルは難しい．
+              </li>
+              <li>
+                材質表記<br>
+                廃棄時に分別，リサイクルしやすいように材質名を表記する．
+              </li>
+            </ul>
+          </div><!-- contents -->
         </div><!-- section -->
       </div><!-- chapter -->
     </div>  <!-- htmlWrap -->
@@ -536,4 +638,3 @@
     </script>
   </body>
 </html>
-
