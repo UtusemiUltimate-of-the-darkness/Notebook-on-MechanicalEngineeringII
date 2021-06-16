@@ -1,3 +1,3 @@
 # Notebook-on-MechanicalEngineeringII
 
-This is notebook on Mechanical Engineering II, Department of Mechanical CAD Design.
+This is notebook on Mechanical Engineering, Department of Mechanical CAD Design at Tohoku Electronics College.
