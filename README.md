@@ -47,7 +47,7 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
           <div>'.timetable.style.display:block'</div>
           <div>'body.timetable.style.display:block'</div>
         </td>
-        <td>Show timetable.</td>
+        <td>Show notebook.</td>
       </tr>
       <tr>
         <td>
@@ -63,7 +63,7 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
           <div>'body.timetable.style.display:none'</div>
         </td>
         <td>
-          Hide timetable<br>
+          Hide notebook<br>
           (background appreciation mode).
         </td>
       </tr>
