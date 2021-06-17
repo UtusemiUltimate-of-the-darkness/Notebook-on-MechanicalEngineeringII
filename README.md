@@ -74,6 +74,11 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/Notebook-on-MechanicalEngineeringII/tree/2021-06-17">2021-06-17</a>
+<ul>
+  <li>Added about synthetic resins.</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/Notebook-on-MechanicalEngineeringII/tree/2021-05-19">2021-05-19</a>
 <ul>
   <li>Added other alloy materials</li>
@@ -82,9 +87,4 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/Notebook-on-MechanicalEngineeringII/tree/2021-06-16">2021-06-16</a>
 <ul>
   <li>Added 4.6. Mechanical materials other than metals</li>
-</ul>
-
-#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/Notebook-on-MechanicalEngineeringII/tree/2021-06-17">2021-06-17</a>
-<ul>
-  <li>Added about synthetic resins.</li>
 </ul>
