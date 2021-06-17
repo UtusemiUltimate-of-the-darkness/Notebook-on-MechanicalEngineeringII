@@ -18,10 +18,6 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
 <ol>
   <li>
     <div>Right click on the page.</div>
-    <div>You'll see a prompt like the one below.</div>
-    <div>
-      <img src="">
-    </div>
   </li>
   <li>
     <div>Enter a command at the prompt. The list of commands is shown in the following table. command is case-insensitive.</div>
