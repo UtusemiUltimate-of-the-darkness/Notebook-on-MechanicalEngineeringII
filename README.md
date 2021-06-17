@@ -41,11 +41,12 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
           <div>'style.display:block'</div>
           <div>'body.display:block'</div>
           <div>'body.style.display:block'</div>
-          <div>'timetable.display:block'</div>
-          <div>'timetable.style.display:block'</div>
-          <div>'.timetable.display:block'</div>
-          <div>'.timetable.style.display:block'</div>
-          <div>'body.timetable.style.display:block'</div>
+          <div>'note.display:block'</div>
+          <div>'note.style.display:block'</div>
+          <div>'.note.display:block'</div>
+          <div>'.note.style.display:block'</div>
+          <div>'body.note.display:block'</div>
+          <div>'body.note.style.display:block'</div>
         </td>
         <td>Show notebook.</td>
       </tr>
@@ -55,12 +56,12 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
           <div>'style.display:none'</div>
           <div>'body.display:none'</div>
           <div>'body.style.display:none'</div>
-          <div>'timetable.display:none'</div>
-          <div>'timetable.style.display:none'</div>
-          <div>'.timetable.display:none'</div>
-          <div>'.timetable.style.display:none'</div>
-          <div>'body.timetable.display:none'</div>
-          <div>'body.timetable.style.display:none'</div>
+          <div>'note.display:none'</div>
+          <div>'note.style.display:none'</div>
+          <div>'.note.display:none'</div>
+          <div>'.note.style.display:none'</div>
+          <div>'body.note.display:none'</div>
+          <div>'body.note.style.display:none'</div>
         </td>
         <td>
           Hide notebook<br>
