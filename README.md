@@ -74,6 +74,13 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
 
 ### version info
 
+#### <a href="https://github.com/UtusemiUltimate-of-the-darkness/Notebook-on-MechanicalEngineeringII/tree/2021-06-25">2021-06-25</a>
+<ul>
+  <li>Add engineering plastics</li>
+  <li>Add super engineering plastics</li>
+  <li>Add ceramic</li>
+</ul>
+
 #### <a href="https://github.com/UtusemiUltimate-of-the-darkness/Notebook-on-MechanicalEngineeringII/tree/2021-06-17">2021-06-17</a>
 <ul>
   <li>Added about synthetic resins.</li>
